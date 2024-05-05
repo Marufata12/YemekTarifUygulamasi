@@ -1,26 +1,18 @@
-Seyahat Planlama Uygulaması:
+Bu kod, bir yemek tarifi uygulaması oluşturur ve kullanıcılara tarif eklemelerini, 
+aramalarını ve değerlendirmelerini sağlar. İşlevselliği şu şekilde özetlenebilir:
 
-Seyahat Planlama Uygulaması, kullanıcıların seyahat rotaları oluşturmasını ve konaklama seçeneklerini yönetmesini sağlayan bir PyQt5 tabanlı bir uygulamadır. 
-Bu uygulama, seyahat rotalarını oluşturmak, seyahat detaylarını eklemek, konaklama tesislerini eklemek, 
-rotaları silmek ve konaklama seçeneklerini silmek gibi temel işlevleri içerir.
+Tarif Uygulamasi Sınıfı: Ana uygulama penceresini oluşturur ve temel arayüz öğelerini içerir. 
+Kullanıcılar, tarif adı, malzemeler ve tarif metni girerek yeni tarifler ekleyebilirler. 
+Ayrıca, mevcut tarifleri arayabilir ve değerlendirme penceresini açabilirler.
 
-Kullanım Kılavuzu
-Rota Ekleme:
-"Rota Detayları" giriş alanına seyahat rotası detaylarını girin.
-"Seyahat Süresi (Gün)" giriş alanına seyahat süresini belirtin.
-"Rota Ekle" düğmesine tıklayarak yeni bir seyahat rotası ekleyin.
+Tarif Arama Sınıfı: Tarif arama penceresini oluşturur. 
+Kullanıcılar, arama metni girerek tarifleri arayabilir ve bulunan sonuçları görüntüleyebilirler. 
+Ayrıca, tarifin değerlendirme puanını da görüntüler.
 
-Detay Ekleme:
-Bir rota seçtikten sonra, "Detay" giriş alanına ek detaylar ekleyin.
-"Detay Ekle" düğmesine tıklayarak rotaya detay ekleyin.
+Tarif Degerlendir Sınıfı: Tarifi değerlendirme penceresini oluşturur. 
+Kullanıcılar, seçtikleri tarifi bir metin ve bir puanla değerlendirebilirler. 
+Değerlendirme sonrasında, puan verilen tarifin puanı güncellenir.
+Uygulama ayrıca, SQLite veritabanı kullanarak tarifleri saklar ve uygulama her başladığında bu veritabanına bağlanır. 
+PyQt5 widget'larını kullanarak arayüz öğeleri oluşturur ve özel stiller ve temalar uygular.
 
-Konaklama Ekleme:
-"Konaklama Tesisi Adı" giriş alanına konaklama tesisi adını girin.
-"Fiyat" giriş alanına konaklama fiyatını girin.
-"Konaklama Ekle" düğmesine tıklayarak yeni bir konaklama seçeneği ekleyin.
-Rotaları ve Konaklama Seçeneklerini Görüntüleme:
-"Rotalar" listesinden mevcut rotaları görüntüleyin. Bir rota seçtiğinizde, detaylarını görmek için kullanabilirsiniz.
-"Konaklama Seçenekleri" listesinden mevcut konaklama seçeneklerini görüntüleyin.
-
-Rota veya Konaklama Silme:
-Bir rota veya konaklama seçtikten sonra, ilgili "Sil" düğmesine tıklayarak seçilen rotayı veya konaklama seçeneğini silin.
+Bu şekilde, kullanıcılar yemek tariflerini ekleyebilir, arayabilir ve değerlendirebilirler.
